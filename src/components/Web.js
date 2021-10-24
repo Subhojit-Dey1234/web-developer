@@ -13,7 +13,7 @@ export default function Web() {
 	return (
 		<div className="Web">
 			<h1
-				style={{ textAlign: "center", fontSize: "40px", fontWeight: "normal" }}
+				style={{ textAlign: "center", fontSize: "35px", fontWeight: "normal", textTransform:"uppercase",color:"yellow" }}
 			>
 				My Projects
 			</h1>

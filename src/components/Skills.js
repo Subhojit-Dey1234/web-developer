@@ -4,7 +4,6 @@ import django from '../images/django (1).png'
 import js from '../images/javascript.png'
 import html from '../images/html-5.png'
 import css from '../images/css.png'
-// import unity from '../images/unity1.png'
 import photoshop from '../images/photoshop.png'
 import illustrator from '../images/illustrator.png'
 import premier from '../images/premiere.png'
@@ -15,7 +14,7 @@ import '../App.css'
 export default function Skills() {
     return (
         <div style={{backgroundColor:"black",position:"relative",zIndex:"100"}}>
-            <h1 style={{textAlign:"center",fontSize:"40px"}}>Skills</h1>
+            <h1 style={{textAlign:"center",fontSize:"40px",textTransform:"uppercase",fontWeight:"initial",color:"yellow"}}>Skills</h1>
             <div className="skills">
             <div className="element">
                <h3>Web Development</h3>

@@ -31,13 +31,13 @@ export default function About() {
 						}}
 					>
 						<h2
-							style={{ textAlign: "center", color: "yellow", fontSize: "40px" }}
+							style={{ textAlign: "center", color: "yellow", fontSize: "40px",fontWeight:"350" , textTransform:"uppercase"}}
 							className="about-header"
 						>
 							About Me
 						</h2>
-						<h3 className="about-details" style={{ fontWeight: "400" }}>
-							I am <b style={{ color: "yellow" }}>Subhojit Dey</b>. I am
+						<h3 className="about-details" style={{ fontWeight: "400", }}>
+							I am <b style={{ color: "#ffe69f",textTransform: "uppercase", }}>Subhojit Dey</b>. I am
 							currently a student of IIT Kharagpur. I am a frontend web
 							developer, UI designer
 						</h3>
