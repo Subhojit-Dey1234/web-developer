@@ -212,6 +212,14 @@
   margin: 10px;
 }
 
+.html{
+  width: 60px !important;
+}
+
+.graphic_design{
+  padding:0 50px ;
+}
+
 .element{
   height: 200px;
   background-color: #ffffff1a;

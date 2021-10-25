@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import loader from "../images/subhojit.gif";
+import loader from "../images/loader.gif";
 
 export default function Projects({
 	imageSrc,
@@ -20,8 +20,8 @@ export default function Projects({
 						setLoading(false);
 					}}
 					style={{
-						width: "97%",
-						height: "100%",
+						width: loading ? "22%" : "97%",
+						height: loading ? "50%" : "100%",
 						alignSelf: "center",
 						justifySelf: "center",
 						borderRadius: "20px",
