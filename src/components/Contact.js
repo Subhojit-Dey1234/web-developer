@@ -3,12 +3,12 @@ import React from 'react'
 export default function Contact() {
     const [showMsg , setMsg] = React.useState(false)
     return (
-        <div style={{background:"black"}}>
+        <div className='contact-us'>
             <h1 style={{textAlign:"center"}}>
                 Contact Me
             </h1>
             <a href="https://forms.gle/7tVgopJjdNVpvsWY6" target="_blank" rel="noreferrer">
-            <button style={{background:"#1b00afd1",width:"30vw",height:"5vh",position:"relative",left:"50vw",transform:"translateX(-50%)",border:"none",boxShadow:"none"}}>
+            <button className='button-form'>
                 Google Form
             </button>
             </a>

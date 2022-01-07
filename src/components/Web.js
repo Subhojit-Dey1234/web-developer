@@ -9,11 +9,11 @@ import schooler from '../images/schooler.png'
 import covid from '../images/covid.png'
 
 
-export default function Web() {
+export default function Web({isBlack}) {
 	return (
-		<div className="Web">
+		<div className="Web" style={{background:isBlack ? "black" : "white"}}>
 			<h1
-				style={{ textAlign: "center", fontSize: "35px", fontWeight: "normal", textTransform:"uppercase",color:"yellow" }}
+				style={{ textAlign: "center", fontSize: "35px", fontWeight: "normal", textTransform:"uppercase",color: isBlack ? "#ffe69f" : "orange"}}
 			>
 				My Projects
 			</h1>
@@ -29,8 +29,10 @@ export default function Web() {
                 link = {
                     "https://github.com/Subhojit-Dey1234/musicupload"
                 }
+				isBlack={isBlack}
 			/>
 			<Projects 
+			isBlack={isBlack}
 			imageSrc={[image1]}
 			name={"Ecommerce Frontend"}
 			details={
@@ -44,6 +46,7 @@ export default function Web() {
 			}
 			/>
 			<Projects 
+			isBlack={isBlack}
 			imageSrc={[hack1]}
 			name={"A Website for Hackathon ( Designed and Built the Frontend )"}
 			details={
@@ -85,6 +88,7 @@ export default function Web() {
 			}
 			/> */}
 			<Projects
+			isBlack={isBlack}
 			name={"Worked as an Intern in a EdTech Startup- Schooler Pro"}
 			imageSrc={[schooler]}
 			language = {"React JS"}
@@ -92,6 +96,7 @@ export default function Web() {
 			details={"Build the platform and added new features in the website "}
 			/>
 			<Projects
+			isBlack={isBlack}
 			name={"An Landing Page"}
 			imageSrc={[agri1]}
 			link = {"https://github.com/Subhojit-Dey1234/Agriculture"}
@@ -99,6 +104,7 @@ export default function Web() {
 			details={"Build with Html and Css"}
 			/>
 			<Projects
+			isBlack={isBlack}
 			name={"A Covid Tracker"}
 			imageSrc={[covid]}
 			link = {"https://subhojit-dey1234.github.io/covid19chart/"}

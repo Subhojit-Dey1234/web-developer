@@ -1,0 +1,112 @@
+@media screen and (max-width : 700px) {
+    .pos{
+        position: absolute;
+        right: 17px;
+        top: 17px;
+        z-index: 100;
+    }
+    .navbar-height{
+        background: transparent !important;
+    }
+    .ham{
+        width: 30px;
+        height: 3px;
+        /* background-color: black; */
+        margin: 5px;
+    }
+    .hoverDiv{
+        display: flex;
+        flex-direction: column;
+        /* background-color: black; */
+        text-align: center;
+        margin-top: 2vh;
+        margin-right: 2vw;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .body{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        padding: 12vh 0 0 0;
+    }
+
+    .intro-element{
+        width: 15rem;
+    }
+
+    .intro h2{
+        font-size: 30px !important;
+    }
+    .profile-image{
+        width: 15rem;
+    }
+    .skillsBackground{
+        height: fit-content;
+    }
+
+    .skills h3{
+        text-align: center;
+    }
+
+    .skills{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+
+    .element{
+        width: 250px;
+        min-height: 240px;
+        margin: 10px;
+        padding: 0;
+    }
+    .element img{
+        width: 50px;
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+
+    .about-details{
+        font-size: 15px;
+    }
+    .about-first{
+        width: 18rem;
+    }
+    .about-image{
+        margin-top:20px;
+        width: 14rem;
+    }
+
+    .grid-project{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        margin: 10px;
+        /* justify-items: start; */
+    }
+
+    .grid-translate {
+        margin: 10px;
+        padding-bottom: 10px !important;
+        border-radius: 10px !important;
+    }
+    
+    .project-details h2{
+        font-size: 15px;
+    }
+    .project-image{
+        width: 300px;
+        height: 180px;
+    }
+    .grid-translate{
+        width: 270px;
+        padding: 10px;
+    }
+}

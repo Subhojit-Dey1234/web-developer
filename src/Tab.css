@@ -1,0 +1,42 @@
+@media screen and (min-width : 500px) and (max-width: 900px){
+    .intro-element{
+        width: 20rem;
+    }
+    .hoverDiv{
+        text-align: center;
+        font-size: 14px;
+    }
+    .element{
+        width: 264px;
+        height: 280px;
+    }
+    .grid-project{
+        align-items: center;
+    }
+    .about-first{
+        width: 18rem;
+    }
+    .about-image{
+        width: 18rem;
+    }
+    .about-details{
+        font-size: 14px;
+    }
+    .project-image{
+        width: 303px;
+        height: 192px;
+    }
+    .project-details{
+        margin-left: 10px;
+    }
+    .project-details h2{
+        font-size: 20px;
+    }
+    .grid-translate{
+        padding-bottom: 20px;
+        width: 20em;
+    }
+    .grid-translate p{
+        font-size: 15px;
+    }
+}

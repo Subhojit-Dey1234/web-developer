@@ -9,6 +9,7 @@ export default function Projects({
 	language,
 	link,
 	classname,
+	isBlack
 }) {
 	const [loading, setLoading] = React.useState(true);
 	return (
@@ -19,32 +20,24 @@ export default function Projects({
 					onLoad={() => {
 						setLoading(false);
 					}}
-					style={{
-						width: loading ? "22%" : "97%",
-						height: loading ? "50%" : "100%",
-						alignSelf: "center",
-						justifySelf: "center",
-						borderRadius: "20px",
-						margin: "20px",
-					}}
 					className="project-image"
 					alt="project"
 				/>
 			))}
 			<div
 				style={{
-					backgroundColor: "#ffffff17",
-					padding: "30px",
-					borderRadius: "20px",
+					backgroundColor: isBlack ? "#ffffff17" : "",
+					color : isBlack ? "white" : "black" , 
+					border : isBlack ? "none" : "rgb(99 37 221 / 64%) dashed 2px"
 				}}
 				className={"grid-translate"}
 			>
-				<div style={{ width: "80%" }} className="project-details">
+				<div className="project-details">
 					<h2
 						style={{
 							textTransform: "uppercase",
 							fontWeight: "initial",
-							color: "#ffffb9",
+							color: isBlack ? "#ffffb9" : "orange" ,
 						}}
 					>
 						Name : {name}
@@ -82,7 +75,7 @@ export default function Projects({
 								borderRadius: "5px",
 								cursor: "pointer",
 								fontWeight: "500",
-                                border:"3px #3645B2 solid"
+								background:isBlack ? "none" : "#3645b2", border: isBlack ?"4px solid #3645b2" : "none"
 							}}
 						>
 							DEMO

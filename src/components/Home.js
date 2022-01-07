@@ -1,24 +1,21 @@
 import React from "react";
 import Intro from "./Intro";
 import profilePic from "../images/ProfilePic4.png";
+import profilePic_color from "../images/ProfilePic5.png";
 import "../App.css";
 
-export default function Home({ projects }) {
+export default function Home({ projects , isBlack}) {
+	
 	return (
-		<div className="container">
-			<div className="body">
+		<div className="container" style={{background : isBlack ?  "linear-gradient(135deg,#03004e,#000)" : "white"}}>
+			<div className="body" style={{background : isBlack ?  "linear-gradient(135deg,#03004e,#000)" : "white"}}>
 				<div id="intro-anim">
-					<Intro intro={projects} />
+					<Intro intro={projects} isBlack={isBlack}/>
 				</div>
 				<div
 					className="profilepic-container"
-					style={
-						window.innerWidth > 950
-							? { overflow: "hidden", position: "relative", zIndex: "1" }
-							: null
-					}
 				>
-					<img src={profilePic} alt="profile" className="profile-image" />
+					<img src={ isBlack ? profilePic : profilePic_color} alt="profile" className="profile-image" />
 				</div>
 			</div>
             <div className="wave">
