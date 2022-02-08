@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import loader from "../images/loader.gif";
+import loader1 from "../images/loader1.gif";
 
 export default function Projects({
 	imageSrc,
@@ -16,7 +16,7 @@ export default function Projects({
 		<div className="grid-project">
 			{imageSrc.map((imagesrc) => (
 				<img
-					src={loading ? loader : imagesrc}
+					src={loading ? loader1 : imagesrc}
 					onLoad={() => {
 						setLoading(false);
 					}}

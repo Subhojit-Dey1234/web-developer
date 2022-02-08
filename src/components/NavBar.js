@@ -4,9 +4,13 @@ import "../App.css";
 export default function NavBar({ home, skills, about, projects, contact, isBlack }) {
 	const [displayHam, setHam] = React.useState(true);
 
-	// React.useEffect(() => {
-	// 	setHam(window.innerWidth > 950);
-	// }, []);
+	React.useEffect(() => {
+		setHam(window.innerWidth > 707);
+	}, []);
+
+	window.onresize = function(){
+		setHam(window.innerWidth > 707);
+	}
 	return (
 		<div style={{minHeight:"10vh",width:"100vw"}}>
 			<div

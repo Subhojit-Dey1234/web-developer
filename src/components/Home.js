@@ -1,6 +1,5 @@
 import React from "react";
 import Intro from "./Intro";
-import profilePic from "../images/ProfilePic4.png";
 import profilePic_color from "../images/ProfilePic5.png";
 import "../App.css";
 
@@ -15,7 +14,7 @@ export default function Home({ projects , isBlack}) {
 				<div
 					className="profilepic-container"
 				>
-					<img src={ isBlack ? profilePic : profilePic_color} alt="profile" className="profile-image" />
+					<img src={profilePic_color} alt="profile" className="profile-image" />
 				</div>
 			</div>
             <div className="wave">
