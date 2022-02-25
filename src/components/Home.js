@@ -1,23 +1,44 @@
-import React from "react";
+import React, { useRef } from "react";
 import Intro from "./Intro";
 import profilePic_color from "../images/ProfilePic5.png";
 import "../App.css";
+import Canvas from "./Canvas";
 
-export default function Home({ projects , isBlack}) {
-	
+export default function Home({ projects, isBlack }) {
+	const container = useRef(null)
 	return (
-		<div className="container" style={{background : isBlack ?  "linear-gradient(135deg,#03004e,#000)" : "white"}}>
-			<div className="body" style={{background : isBlack ?  "linear-gradient(135deg,#03004e,#000)" : "white"}}>
-				<div id="intro-anim">
-					<Intro intro={projects} isBlack={isBlack}/>
-				</div>
+		<div>
+			<div
+				ref = {container}
+				className="container"
+				style={{
+					// minHeight:"100vh",
+					background: isBlack
+						? "linear-gradient(135deg,#03004e,#000)"
+						: "white",
+				}}
+			>
+				<Canvas container={container}/>
 				<div
-					className="profilepic-container"
+					className="body"
+					style={{
+						background: isBlack
+							? "linear-gradient(135deg,#03004e,#000)"
+							: "white",
+					}}
 				>
-					<img src={profilePic_color} alt="profile" className="profile-image" />
+					<div id="intro-anim">
+						<Intro intro={projects} isBlack={isBlack} />
+					</div>
+					<div className="profilepic-container">
+						<img
+							src={profilePic_color}
+							alt="profile"
+							className="profile-image"
+						/>
+					</div>
 				</div>
-			</div>
-            <div className="wave">
+				<div className="wave">
 					<svg
 						data-name="Layer 1"
 						xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +51,7 @@ export default function Home({ projects , isBlack}) {
 						></path>
 					</svg>
 				</div>
+			</div>
 		</div>
 	);
 }

@@ -5,7 +5,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
 import Web from "./components/Web";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
 import loader1 from "./images/loader1.gif";
