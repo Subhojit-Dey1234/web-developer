@@ -37,7 +37,7 @@ export default function Skills({ isBlack }) {
 						background: isBlack
 							? "hsla(0,0%,100%,.10196078431372549)"
 							: "none",
-						border: isBlack ? "none" : "rgb(99 37 221 / 64%) dashed 2px",
+						border: isBlack ? "none" : "#6D83F2 solid 3px",
 					}}
 				>
 					<h3 style={{color: isBlack ? "white" : "black"}}>Web Development</h3>
@@ -60,7 +60,7 @@ export default function Skills({ isBlack }) {
 						background: isBlack
 							? "hsla(0,0%,100%,.10196078431372549)"
 							: "none",
-							border: isBlack ? "none" : "rgb(99 37 221 / 64%) dashed 2px",
+							border: isBlack ? "none" : "#6D83F2 solid 3px",
 					}}
 				>
 					<h3 style={{color: isBlack ? "white" : "black"}}>Graphic Design and Video Editing</h3>

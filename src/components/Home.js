@@ -12,19 +12,20 @@ export default function Home({ projects, isBlack }) {
 				ref = {container}
 				className="container"
 				style={{
-					// minHeight:"100vh",
+					position:"relative",
+					overflowY:"hidden",
 					background: isBlack
 						? "linear-gradient(135deg,#03004e,#000)"
-						: "white",
+						: "linear-gradient(135deg,#fff,#6D83F2)",
 				}}
 			>
-				<Canvas container={container}/>
+				<Canvas container={container} color={isBlack ? `rgba(225,225,225,${Math.random() * 0.6})` :`rgba(0,0,225,${Math.random() * 0.6})`}/>
 				<div
 					className="body"
 					style={{
 						background: isBlack
 							? "linear-gradient(135deg,#03004e,#000)"
-							: "white",
+							: "linear-gradient(135deg,#fff,#6D83F2)",
 					}}
 				>
 					<div id="intro-anim">

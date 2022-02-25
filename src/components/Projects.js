@@ -28,7 +28,7 @@ export default function Projects({
 				style={{
 					backgroundColor: isBlack ? "#ffffff17" : "",
 					color : isBlack ? "white" : "black" , 
-					border : isBlack ? "none" : "rgb(99 37 221 / 64%) dashed 2px"
+					border : isBlack ? "none" : "#6D83F2 solid 3px"
 				}}
 				className={"grid-translate"}
 			>

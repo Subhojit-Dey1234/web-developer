@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function Canvas() {
+export default function Canvas({color}) {
 	const canvasRef = React.useRef();
 	const [canvas, setCanvas] = useState(null);
 	const [ctx, setCtx] = useState(null);
@@ -21,7 +21,7 @@ export default function Canvas() {
 			this.baseX = this.x;
 			this.baseY = this.y;
 			this.density = Math.random() * 30 + 1;
-			this.color = `rgba(225,225,225,${Math.random() * 0.6})`;
+			this.color = color;
 			this.distance = 20;
 		}
 
@@ -82,7 +82,7 @@ export default function Canvas() {
 				let distance = Math.sqrt(dx * dx + dy * dy);
 
 				if (distance < 90) {
-					ctx.strokeStyle = "rgba(225,225,225,0.2)";
+					ctx.strokeStyle = color;
 					ctx.lineWidth = 1;
 					ctx.beginPath();
 					ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
