@@ -27,11 +27,12 @@ export default function Web({ isBlack }) {
 				isBlack={isBlack}
 				name={"Hackathon ( IIT Kharagpur )"}
 				imageSrc={[tsg]}
-				link={"https://hackathon-tsg.herokuapp.com/"}
+				link={"https://github.com/Soumya624/Udichi_Client"}
 				language={"React JS, Mongodb, Node JS, Express JS"}
 				details={
 					"It is a hackathon Project built with Node JS, Express JS, Mongodb, React JS ( MERN STACK ). It is built for uploading achievements, events and many news in the portal and helping the growth in student community"
 				}
+				special = {true}
 			/>
 			<Projects
 				imageSrc={[image]}
@@ -53,7 +54,7 @@ export default function Web({ isBlack }) {
 					"It is a hackathon project for Accenture. The main moto was to a platform where people can support and help financialy backward people and help them bring them in the normal race."
 				}
 				language={"Frontend - React Js Backend- Node JS"}
-				link={"https://accenture-hackathon-123.herokuapp.com/"}
+				link={"https://github.com/Soumya624/Accenture-Hackathon"}
 			/>
 			{/* <Projects
 			imageSrc = {image2}

@@ -7,6 +7,8 @@ import css from "../logos/css3.svg";
 import photoshop from "../images/photoshop.png";
 import illustrator from "../images/illustrator.png";
 import premier from "../images/premiere.png";
+import nodelogo from '../images/node-js.png'
+import reactlogo from '../images/react.png'
 import xd from "../images/experience.png";
 import "../App.css";
 
@@ -47,6 +49,8 @@ export default function Skills({ isBlack }) {
 						<img src={js} alt="lnag" />
 						<img src={python} alt="lnag" />
 						<img src={django} alt="lnag" />
+						<img src={nodelogo} alt="lnag" />
+						<img src={reactlogo} alt="lnag" />
 					</div>
 				</div>
 				{/* <div className="element">

@@ -9,7 +9,8 @@ export default function Projects({
 	language,
 	link,
 	classname,
-	isBlack
+	isBlack,
+	special
 }) {
 	const [loading, setLoading] = React.useState(true);
 	return (
@@ -45,20 +46,13 @@ export default function Projects({
 					<p>
 						<b style={{ fontWeight: "500" }}>Details</b> : {details}
 					</p>
+					{special && <p>
+						<b style={{ fontWeight: "800", textTransform:"uppercase" }}>Won Prize for Best Events Page 🏆</b>
+					</p>}
 					<p>
 						<b style={{ fontWeight: "500" }}>Language</b>: {language}
 					</p>
-					{/* <h3 style={{ fontWeight: "500" }}>
-						Link:{" "}
-						<a
-							target="_blank"
-							rel="noreferrer"
-							style={{ fontWeight: "600", fontSize: "15px" }}
-							href={link}
-						>
-							{link}
-						</a>
-					</h3> */}
+					
 					<a
 						target="_blank"
 						rel="noreferrer"

@@ -12,6 +12,11 @@
   display: flex;
 }
 
+.hover-effect:hover{
+  text-decoration: underline 1px;
+  text-underline-offset: 2px;
+}
+
 .modes div{
   width: 15px;
   height: 15px;
@@ -28,7 +33,7 @@
 }
 
 .navbar{
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 10;
   color: white;
@@ -108,7 +113,7 @@
   /* background-color: black; */
   color: white;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   align-items: center;
   justify-items: center;
 }
@@ -117,9 +122,11 @@
   text-align: center;
   border-radius: 10px;
   height: 180px;
-  width: 400px;
+  width: 600px;
   padding: 6px 0 0 20px;
   background-color: hsla(0,0%,100%,.10196078431372549);
+  margin-top: 10px;
+  border:#5500ffc2 2px solid !important;
 }
 
 .element img{
@@ -159,8 +166,8 @@
 }
 
 .button-resume {
-  width: 180px;
-  height: 65px;
+  width: 170px;
+  height: 48px;
   border-radius: 10px;
   /* border: 4px solid #3645b2; */
   background: transparent;

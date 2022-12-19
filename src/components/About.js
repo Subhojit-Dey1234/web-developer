@@ -47,7 +47,7 @@ export default function About({ isBlack }) {
 						<button
 							style={{
 								background: isBlack ? "none" : "#3645b2",
-								border: isBlack ? "4px solid #3645b2" : "none",
+								border: isBlack ? "2px solid #5500ffc2" : "none",
 							}}
 							className="button-resume"
 						>

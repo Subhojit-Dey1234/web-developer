@@ -1,6 +1,8 @@
 import React from "react";
 import "../App.css";
 
+// background : isBlack ? "rgb(0 0 143)" : "#6D83F2",
+
 export default function NavBar({ home, skills, about, projects, contact, isBlack }) {
 	const [displayHam, setHam] = React.useState(true);
 
@@ -23,9 +25,9 @@ export default function NavBar({ home, skills, about, projects, contact, isBlack
 				<div style={{backgroundColor:isBlack ? "white" : "black"}} className="ham"></div>
 				<div style={{backgroundColor:isBlack ? "white" : "black"}} className="ham"></div>
 			</div>
-			<div className="navbar-height" style={{background : isBlack ? "rgb(0 0 143)" : "#6D83F2", color:isBlack ? "white"  : "white"}}>
+			<div className="navbar-height" style={{color:isBlack ? "white"  : "white"}}>
 				<div></div>
-				<div className="hoverDiv" style={{display: displayHam ? "flex" : "none",background : isBlack ? "rgb(0 0 143)" : "#6D83F2"}}>
+				<div className="hoverDiv" style={{display: displayHam ? "flex" : "none"}}>
 					<div>
 						<p
 							className="hover-effect"
