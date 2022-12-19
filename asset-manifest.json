@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2173b792.chunk.css",
-    "main.js": "/static/js/main.7d1dedf0.chunk.js",
-    "main.js.map": "/static/js/main.7d1dedf0.chunk.js.map",
+    "main.css": "/static/css/main.20f891b9.chunk.css",
+    "main.js": "/static/js/main.043f10e7.chunk.js",
+    "main.js.map": "/static/js/main.043f10e7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0e1a6375.js",
     "runtime-main.js.map": "/static/js/runtime-main.0e1a6375.js.map",
     "static/js/2.ec8af922.chunk.js": "/static/js/2.ec8af922.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.d19d4f60.chunk.js": "/static/js/3.d19d4f60.chunk.js",
     "static/js/3.d19d4f60.chunk.js.map": "/static/js/3.d19d4f60.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2173b792.chunk.css.map": "/static/css/main.2173b792.chunk.css.map",
+    "static/css/main.20f891b9.chunk.css.map": "/static/css/main.20f891b9.chunk.css.map",
     "static/js/2.ec8af922.chunk.js.LICENSE.txt": "/static/js/2.ec8af922.chunk.js.LICENSE.txt",
     "static/media/ProfilePic3.5adacb55.png": "/static/media/ProfilePic3.5adacb55.png",
     "static/media/ProfilePic5.a391dc44.png": "/static/media/ProfilePic5.a391dc44.png",
@@ -25,9 +25,11 @@
     "static/media/illustrator.8caf62dd.png": "/static/media/illustrator.8caf62dd.png",
     "static/media/js.b8d34544.svg": "/static/media/js.b8d34544.svg",
     "static/media/loader1.d8ea1b71.gif": "/static/media/loader1.d8ea1b71.gif",
+    "static/media/node-js.e328955d.png": "/static/media/node-js.e328955d.png",
     "static/media/photoshop.e53fc22b.png": "/static/media/photoshop.e53fc22b.png",
     "static/media/premiere.8b9f6081.png": "/static/media/premiere.8b9f6081.png",
     "static/media/python.af111b59.svg": "/static/media/python.af111b59.svg",
+    "static/media/react.702a26a6.png": "/static/media/react.702a26a6.png",
     "static/media/tsg.1d4d0ce1.png": "/static/media/tsg.1d4d0ce1.png",
     "static/media/twitter.63f38a44.png": "/static/media/twitter.63f38a44.png",
     "static/media/web2.dee12215.png": "/static/media/web2.dee12215.png"
@@ -35,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.0e1a6375.js",
     "static/js/2.ec8af922.chunk.js",
-    "static/css/main.2173b792.chunk.css",
-    "static/js/main.7d1dedf0.chunk.js"
+    "static/css/main.20f891b9.chunk.css",
+    "static/js/main.043f10e7.chunk.js"
   ]
 }
