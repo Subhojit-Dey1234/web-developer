@@ -5,21 +5,28 @@ import "../App.css";
 import Canvas from "./Canvas";
 
 export default function Home({ projects, isBlack }) {
-	const container = useRef(null)
+	const container = useRef(null);
 	return (
 		<div>
 			<div
-				ref = {container}
+				ref={container}
 				className="container"
 				style={{
-					position:"relative",
-					overflowY:"hidden",
+					position: "relative",
+					overflowY: "hidden",
 					background: isBlack
 						? "linear-gradient(135deg,#03004e,#000)"
 						: "linear-gradient(135deg,#fff,#6D83F2)",
 				}}
 			>
-				<Canvas container={container} color={isBlack ? `rgba(225,225,225,${Math.random() * 0.6})` :`rgba(0,0,225,${Math.random() * 0.6})`}/>
+				<Canvas
+					container={container}
+					color={
+						isBlack
+							? `rgba(225,225,225,${Math.random() * 0.6})`
+							: `rgba(0,0,225,${Math.random() * 0.6})`
+					}
+				/>
 				<div
 					className="body"
 					style={{
@@ -31,13 +38,13 @@ export default function Home({ projects, isBlack }) {
 					<div id="intro-anim">
 						<Intro intro={projects} isBlack={isBlack} />
 					</div>
-					<div className="profilepic-container">
+					{/* <div className="profilepic-container">
 						<img
 							src={profilePic_color}
 							alt="profile"
 							className="profile-image"
 						/>
-					</div>
+					</div> */}
 				</div>
 				<div className="wave">
 					<svg
